@@ -179,10 +179,6 @@ export default function Home() {
             </figcaption>
           </figure>
 
-          <a className="scroll-cue" href="#experience">
-            <span>Scroll to Resume</span>
-            <i aria-hidden="true" />
-          </a>
         </div>
       </section>
 

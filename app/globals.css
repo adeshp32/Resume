@@ -273,45 +273,6 @@ main {
   text-transform: uppercase;
 }
 
-.scroll-cue {
-  position: absolute;
-  bottom: 2rem;
-  left: var(--page-padding);
-  display: flex;
-  align-items: center;
-  gap: 0.8rem;
-  color: #77736d;
-  font-size: 0.68rem;
-  letter-spacing: 0.12em;
-  opacity: calc(1 - var(--hero-progress) * 2.2);
-  text-transform: uppercase;
-}
-
-.scroll-cue i {
-  position: relative;
-  display: block;
-  width: 42px;
-  height: 1px;
-  overflow: hidden;
-  background: #5e5a55;
-}
-
-.scroll-cue i::after {
-  position: absolute;
-  inset: 0;
-  background: var(--emerald);
-  content: "";
-  transform: translateX(-100%);
-  animation: scroll-line 2.2s ease-in-out infinite;
-}
-
-@keyframes scroll-line {
-  55%,
-  100% {
-    transform: translateX(100%);
-  }
-}
-
 .resume-page {
   position: relative;
   z-index: 3;
@@ -663,10 +624,6 @@ footer a:hover {
   .portrait-frame__line {
     inset: -8px 8px 8px -8px;
     border-radius: 20px;
-  }
-
-  .scroll-cue {
-    display: none;
   }
 
   .section-heading {
