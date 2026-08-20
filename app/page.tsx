@@ -54,7 +54,7 @@ export default function Home() {
   const [activeSection, setActiveSection] = useState("intro");
 
   useEffect(() => {
-    const updateScroll = () => {
+    const updateHeroProgress = () => {
       const hero = heroRef.current;
       if (!hero) return;
 
@@ -63,17 +63,8 @@ export default function Home() {
         Math.max((window.scrollY - hero.offsetTop) / maxHeroScroll, 0),
         1,
       );
-      const documentProgress = Math.min(
-        window.scrollY /
-          Math.max(document.documentElement.scrollHeight - window.innerHeight, 1),
-        1,
-      );
 
       hero.style.setProperty("--hero-progress", heroProgress.toString());
-      document.documentElement.style.setProperty(
-        "--scroll-progress",
-        documentProgress.toString(),
-      );
     };
 
     const revealObserver = new IntersectionObserver(
@@ -102,13 +93,13 @@ export default function Home() {
       sectionObserver.observe(node),
     );
 
-    updateScroll();
-    window.addEventListener("scroll", updateScroll, { passive: true });
-    window.addEventListener("resize", updateScroll);
+    updateHeroProgress();
+    window.addEventListener("scroll", updateHeroProgress, { passive: true });
+    window.addEventListener("resize", updateHeroProgress);
 
     return () => {
-      window.removeEventListener("scroll", updateScroll);
-      window.removeEventListener("resize", updateScroll);
+      window.removeEventListener("scroll", updateHeroProgress);
+      window.removeEventListener("resize", updateHeroProgress);
       revealObserver.disconnect();
       sectionObserver.disconnect();
     };
@@ -116,10 +107,6 @@ export default function Home() {
 
   return (
     <main>
-      <div className="scroll-progress" aria-hidden="true">
-        <span className="scroll-progress__bar" />
-      </div>
-
       <header className="site-header" aria-label="Primary navigation">
         <a className="monogram" href="#intro" aria-label="Back to introduction">
           AD<span className="monogram__dot">.</span>
@@ -151,15 +138,15 @@ export default function Home() {
       >
         <div className="hero__sticky">
           <div className="hero__content">
-            <p className="eyebrow">Software engineer · ASU 2026</p>
+            <p className="eyebrow">Aditya Deshpande · computer science at ASU</p>
             <h1>
-              I make complex systems
-              <span> easier to use.</span>
+              Software engineering,
+              <span>mostly for the web.</span>
             </h1>
             <p className="hero__blurb">
-              I&apos;m Aditya, a computer science student at Arizona State
-              University. I like untangling awkward workflows, tightening the
-              details, and shipping software people can rely on.
+              I graduate in December 2026. Lately I&apos;ve been working with
+              React, TypeScript, Node.js, and Python on nonprofit, media, and
+              education projects.
             </p>
             <div className="hero__actions">
               <a
@@ -183,7 +170,7 @@ export default function Home() {
               />
               <img
                 src="/images/aditya-portrait.webp"
-                alt="Aditya Deshpande standing outdoors in warm evening light"
+                alt="Portrait of Aditya Deshpande outdoors in warm evening light"
                 width="960"
                 height="1200"
                 fetchPriority="high"
@@ -210,11 +197,10 @@ export default function Home() {
         >
           <div className="section-heading" data-reveal>
             <p className="section-kicker">Experience</p>
-            <h2>Work shaped by real users and real constraints.</h2>
+            <h2>What I&apos;ve worked on.</h2>
             <p>
-              Most of my best work has started with something confusing,
-              fragile, or unfinished. I enjoy finding the practical path from
-              there to something people can actually use.
+              Web development for a nonprofit, product work with a five-person
+              capstone team, and a student app used by more than 15,000 people.
             </p>
           </div>
 
@@ -263,7 +249,7 @@ export default function Home() {
         <section className="section skills-section" id="skills" data-section>
           <div className="section-heading" data-reveal>
             <p className="section-kicker">Technical skills</p>
-            <h2>A practical stack for building and shipping.</h2>
+            <h2>Tools I use.</h2>
           </div>
           <div className="skill-list" data-reveal>
             {skills.map(([category, items]) => (
@@ -277,22 +263,16 @@ export default function Home() {
 
         <section className="contact-section" id="contact" data-section>
           <div className="contact-section__inner" data-reveal>
-            <p className="section-kicker">Contact</p>
-            <h2>Let&apos;s build something useful.</h2>
-            <p>
-              I&apos;m looking for software engineering opportunities where I can
-              learn quickly, care about the details, and contribute from day one.
-            </p>
-            <div className="contact-links">
-              <a href="mailto:adeshp32@asu.edu">adeshp32@asu.edu</a>
-              <a
-                href="https://www.linkedin.com/in/aditya-deshpande-127218205/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                LinkedIn <span aria-hidden="true">↗</span>
-              </a>
+            <div>
+              <p className="section-kicker">Contact</p>
+              <h2>Project or work enquiry?</h2>
             </div>
+            <a
+              className="contact-email"
+              href="mailto:adeshp32@asu.edu?subject=Project%20or%20work%20enquiry"
+            >
+              adeshp32@asu.edu <span aria-hidden="true">↗</span>
+            </a>
           </div>
           <footer>
             <span>Aditya Deshpande</span>
