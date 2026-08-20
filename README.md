@@ -1,6 +1,6 @@
 # Aditya Deshpande — Portfolio
 
-A deployment-ready, one-page portfolio and résumé site built with React,
+A deployment-ready, one-page portfolio and resume site built with React,
 TypeScript, Next.js, and Vinext. It uses a native dark theme, responsive portrait
 art direction, scroll-linked hero transitions, section reveals, and active
 navigation.
@@ -27,11 +27,11 @@ npm test
 
 ## Edit the portfolio
 
-- Main page, résumé content, links, and skill groups: `app/page.tsx`
+- Main page, resume content, links, and skill groups: `app/page.tsx`
 - Colors, layout, responsive crop behavior, and animation: `app/globals.css`
 - Browser metadata and search description: `app/layout.tsx`
 - Hero images: `public/images/`
-- Downloadable résumé: `public/resume/Aditya_Deshpande_Tech_Resume.pdf`
+- Downloadable resume: `public/resume/Aditya_Deshpande_Tech_Resume.pdf`
 
 The experience and skill sections are data arrays near the top of `app/page.tsx`,
 so updates do not require changing the page structure. A future project section

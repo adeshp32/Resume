@@ -4,7 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Aditya Deshpande | Software Engineer",
   description:
-    "Portfolio and résumé of Aditya Deshpande, a software engineer and computer science student at Arizona State University.",
+    "Portfolio and resume of Aditya Deshpande, a software engineer and computer science student at Arizona State University.",
   authors: [{ name: "Aditya Deshpande" }],
   keywords: [
     "Aditya Deshpande",
