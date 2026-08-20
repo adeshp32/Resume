@@ -152,7 +152,7 @@ export default function Home() {
                 target="_blank"
                 rel="noreferrer"
               >
-                View resume <span aria-hidden="true">↗</span>
+                View Resume <span aria-hidden="true">↗</span>
               </a>
               <span className="resume-meta">PDF · one page</span>
             </div>
@@ -180,7 +180,7 @@ export default function Home() {
           </figure>
 
           <a className="scroll-cue" href="#experience">
-            <span>Scroll to resume</span>
+            <span>Scroll to Resume</span>
             <i aria-hidden="true" />
           </a>
         </div>
