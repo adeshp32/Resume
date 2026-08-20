@@ -39,6 +39,7 @@ test("renders the updated portfolio homepage", async () => {
   assert.match(html, /View Resume/);
   assert.match(html, /Docker, Kubernetes, CI\/CD/);
   assert.match(html, /Generative AI, PyTorch, Prompt Engineering/);
+  assert.match(html, /Stripe, Power BI, Zoho Software, AWS, Firebase/);
   assert.doesNotMatch(html, /Scroll to Resume/);
   assert.doesNotMatch(html, /résumé/i);
   assert.doesNotMatch(html, /class=["']scroll-progress["']/);

@@ -40,13 +40,13 @@ const experiences = [
 const skills = [
   ["Languages", "JavaScript, TypeScript, Python, Java, C++, C#, SQL, Zoho Deluge, HTML/CSS"],
   ["Frameworks & Web", "React, Angular 20, Node.js, Responsive Web Development, REST APIs"],
-  ["Data & Cloud", "PostgreSQL, MySQL, Firebase, AWS, Relational Databases"],
+  ["Data & Cloud", "PostgreSQL, MySQL, Relational Databases"],
   ["Testing & DevOps", "Automated Testing, API Testing, End-to-End Testing, Docker, Kubernetes, CI/CD, GitHub Actions"],
   ["Development", "Git, GitHub, Agile Development, Requirements Analysis, Client-Server Architecture"],
   ["AI & Automation", "Generative AI, PyTorch, Prompt Engineering, Agentic Workflows, Human-in-the-Loop Validation, AI-Assisted Development"],
   ["Engineering", "System Reliability, Debugging, Data Modeling, Technical Documentation"],
   ["Integrations", "Webhooks, Payment Integrations, Workflow Automation, CRM Integrations"],
-  ["Platforms", "Stripe, Power BI, Zoho Software"],
+  ["Platforms", "Stripe, Power BI, Zoho Software, AWS, Firebase"],
 ];
 
 export default function Home() {
