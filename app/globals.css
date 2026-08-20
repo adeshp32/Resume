@@ -144,7 +144,13 @@ main {
 .hero__content {
   position: relative;
   z-index: 2;
+  align-self: end;
+  justify-self: center;
+  width: 100%;
+  max-width: 620px;
+  padding-bottom: 0.5rem;
   opacity: calc(1 - var(--hero-progress) * 1.18);
+  text-align: center;
   transform: translate3d(0, calc(var(--hero-progress) * -3.6rem), 0);
   will-change: opacity, transform;
 }
@@ -159,24 +165,9 @@ main {
   text-transform: uppercase;
 }
 
-.hero h1 {
-  max-width: 800px;
-  margin: 1.6rem 0 1.8rem;
-  font-size: clamp(3.6rem, 7vw, 7rem);
-  font-weight: 560;
-  letter-spacing: -0.067em;
-  line-height: 0.94;
-}
-
-.hero h1 span {
-  display: block;
-  color: var(--muted);
-  font-weight: 460;
-}
-
 .hero__blurb {
   max-width: 580px;
-  margin: 0;
+  margin: 1.25rem auto 0;
   color: #ccc7be;
   font-size: clamp(1rem, 1.4vw, 1.18rem);
   letter-spacing: -0.01em;
@@ -186,6 +177,7 @@ main {
 .hero__actions {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 1rem;
   margin-top: 1.8rem;
 }
@@ -551,10 +543,6 @@ footer a:hover {
     gap: 2.3rem;
   }
 
-  .hero h1 {
-    font-size: clamp(3.2rem, 7.5vw, 5rem);
-  }
-
   .role {
     grid-template-columns: 40px minmax(120px, 0.34fr) minmax(0, 1fr);
     gap: 1rem 1.5rem;
@@ -583,16 +571,6 @@ footer a:hover {
     min-height: 620px;
     padding-top: 5.3rem;
     padding-bottom: 3.4rem;
-  }
-
-  .hero__content {
-    align-self: end;
-  }
-
-  .hero h1 {
-    margin: 1rem 0 1.15rem;
-    font-size: clamp(2.85rem, 13vw, 4.7rem);
-    line-height: 0.96;
   }
 
   .hero__blurb {
@@ -698,7 +676,7 @@ footer a:hover {
   }
 
   .hero__actions {
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
     gap: 0.65rem;
   }

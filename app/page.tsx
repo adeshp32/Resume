@@ -139,7 +139,6 @@ export default function Home() {
         <div className="hero__sticky">
           <div className="hero__content">
             <p className="eyebrow">Aditya Deshpande · computer science at ASU</p>
-            <h1>Computer science student.</h1>
             <p className="hero__blurb">
               I graduate in December 2026. Lately I&apos;ve been working with
               React, TypeScript, Node.js, and Python on nonprofit, media, and
