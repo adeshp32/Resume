@@ -42,11 +42,11 @@ const skills = [
   ["Frameworks & Web", "React, Angular 20, Node.js, Responsive Web Development, REST APIs"],
   ["Data & Cloud", "PostgreSQL, MySQL, Firebase, AWS, Relational Databases"],
   ["Testing & DevOps", "Automated Testing, API Testing, End-to-End Testing, Docker, CI/CD, GitHub Actions"],
-  ["Development", "Git, GitHub, Agile Development, Requirements Analysis, Client-Server Architecture"],
+  ["Development", "Git, Agile Development, Requirements Analysis, Client-Server Architecture"],
   ["AI & Automation", "Generative AI, Prompt Engineering, Agentic Workflows, Human-in-the-Loop Validation, AI-Assisted Development"],
   ["Engineering", "System Reliability, Debugging, Data Modeling, Technical Documentation"],
   ["Integrations", "Webhooks, Payment Integrations, Workflow Automation, CRM Integrations"],
-  ["Platforms", "Stripe, Power BI, Zoho Software"],
+  ["Platforms", "Stripe, Power BI, Zoho Software, Cloudflare Workers, GitHub"],
 ];
 
 export default function Home() {
