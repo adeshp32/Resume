@@ -539,7 +539,13 @@ main {
   line-height: 1;
 }
 
-.contact-email {
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.25rem;
+}
+
+.contact-link {
   padding: 0.8rem 0;
   border-bottom: 1px solid var(--emerald-deep);
   color: #d8f9e8;
@@ -548,7 +554,7 @@ main {
   transition: border-color 180ms ease, color 180ms ease;
 }
 
-.contact-email:hover {
+.contact-link:hover {
   border-color: var(--emerald);
   color: var(--emerald);
 }

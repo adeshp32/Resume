@@ -35,6 +35,7 @@ test("renders the updated portfolio homepage", async () => {
   assert.match(html, /Software engineering,/);
   assert.match(html, /Project or work enquiry\?/);
   assert.match(html, /mailto:adeshp32@asu\.edu\?subject=Project%20or%20work%20enquiry/);
+  assert.match(html, /https:\/\/www\.linkedin\.com\/in\/aditya-deshpande-127218205\//);
   assert.match(html, /View resume/);
   assert.doesNotMatch(html, /résumé/i);
   assert.doesNotMatch(html, /class=["']scroll-progress["']/);

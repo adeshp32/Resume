@@ -267,12 +267,22 @@ export default function Home() {
               <p className="section-kicker">Contact</p>
               <h2>Project or work enquiry?</h2>
             </div>
-            <a
-              className="contact-email"
-              href="mailto:adeshp32@asu.edu?subject=Project%20or%20work%20enquiry"
-            >
-              adeshp32@asu.edu <span aria-hidden="true">↗</span>
-            </a>
+            <div className="contact-actions">
+              <a
+                className="contact-link"
+                href="mailto:adeshp32@asu.edu?subject=Project%20or%20work%20enquiry"
+              >
+                adeshp32@asu.edu <span aria-hidden="true">↗</span>
+              </a>
+              <a
+                className="contact-link"
+                href="https://www.linkedin.com/in/aditya-deshpande-127218205/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                LinkedIn <span aria-hidden="true">↗</span>
+              </a>
+            </div>
           </div>
           <footer>
             <span>Aditya Deshpande</span>
