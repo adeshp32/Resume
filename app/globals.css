@@ -144,11 +144,10 @@ main {
 .hero__content {
   position: relative;
   z-index: 2;
-  align-self: end;
+  align-self: center;
   justify-self: center;
   width: 100%;
   max-width: 620px;
-  padding-bottom: 0.5rem;
   opacity: calc(1 - var(--hero-progress) * 1.18);
   text-align: center;
   transform: translate3d(0, calc(var(--hero-progress) * -3.6rem), 0);
