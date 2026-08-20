@@ -131,7 +131,9 @@ main {
   position: sticky;
   top: 0;
   display: grid;
+  grid-template-areas: "intro portrait";
   grid-template-columns: minmax(0, 1.08fr) minmax(300px, 0.74fr);
+  grid-template-rows: 1fr;
   align-items: center;
   gap: clamp(2.5rem, 6vw, 7rem);
   width: min(100%, calc(var(--content-width) + var(--page-padding) * 2));
@@ -144,8 +146,8 @@ main {
 .hero__content {
   position: relative;
   z-index: 2;
-  align-self: center;
-  justify-self: center;
+  grid-area: intro;
+  place-self: center;
   width: 100%;
   max-width: 620px;
   opacity: calc(1 - var(--hero-progress) * 1.18);
@@ -222,8 +224,10 @@ main {
 
 .portrait-frame {
   position: relative;
+  grid-area: portrait;
+  place-self: center end;
   width: min(100%, 440px);
-  margin: 0 0 0 auto;
+  margin: 0;
   opacity: calc(1 - var(--hero-progress) * 1.1);
   transform: translate3d(0, calc(var(--hero-progress) * 2.2rem), 0)
     scale(calc(1 - var(--hero-progress) * 0.035));
@@ -563,6 +567,9 @@ footer a:hover {
   }
 
   .hero__sticky {
+    grid-template-areas:
+      "intro"
+      "portrait";
     grid-template-columns: 1fr;
     grid-template-rows: auto minmax(120px, 18svh);
     align-content: center;
@@ -582,7 +589,7 @@ footer a:hover {
   }
 
   .portrait-frame {
-    align-self: start;
+    place-self: start stretch;
     width: 100%;
     max-width: none;
     margin: 0;
